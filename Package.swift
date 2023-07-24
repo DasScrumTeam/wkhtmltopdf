@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 // swift-tools-version:5.5
+=======
+// swift-tools-version:4.2
+>>>>>>> parent of f5160ba (Update Package.swift)
 import PackageDescription
 
 let package = Package(
