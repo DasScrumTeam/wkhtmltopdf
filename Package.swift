@@ -1,21 +1,24 @@
-// swift-tools-version:4.0
+// swift-tools-version:5.5
 import PackageDescription
 
 let package = Package(
-    name: "wkhtmltopdf",
-    products: [
+   name: "wkhtmltopdf",
+   platforms: [
+      .macOS(.v10_15)
+   ],
+   products: [
         .library(
             name: "wkhtmltopdf",
             targets: ["wkhtmltopdf"]),
     ],
     dependencies: [
-        .package(url: "https://github.com/vapor/service.git", from: "1.0.2")
-    ],
+	.package(url: "https://github.com/vapor/vapor.git", from: "4.0.0"), 
+   ],
     targets: [
         .target(
             name: "wkhtmltopdf",
             dependencies: [
-                "Service"
+		.product(name: "Vapor", package: "vapor"), // Updated to "vapor"
             ]),
     ]
 )

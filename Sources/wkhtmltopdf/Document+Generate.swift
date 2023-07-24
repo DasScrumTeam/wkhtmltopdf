@@ -1,5 +1,5 @@
 import Foundation
-import Service
+import Vapor
 
 extension Document {
 
