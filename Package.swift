@@ -9,7 +9,7 @@ let package = Package(
             targets: ["wkhtmltopdf"]),
     ],
     dependencies: [
-        .package(url: "https://github.com/vapor/service.git", from: "1.0.0")
+        .package(url: "https://github.com/vapor/service.git", from: "1.0.2")
     ],
     targets: [
         .target(
